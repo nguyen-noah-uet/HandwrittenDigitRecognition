@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Handwritten Digit Recognition</title>
+</head>
+
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <p class="title common">Computer Vision</p>
+    <!-- <div class="common">
+        <a href="https://github.com/nai-kon/CNN-Digit-Recognition">https://github.com/nai-kon/CNN-Digit-Recognition</a><br/>
+        created by Katz Sasaki
+    </div> -->
+    <div class="common">
+    <p class="title common">Nhận diện chữ số viết tay sử dụng CNN</p>
+    <p class="title common">Handwritten Digit Recognition using CNN</p>
+    <!-- <div class="common">
+        <a href="https://github.com/nai-kon/CNN-Digit-Recognition">https://github.com/nai-kon/CNN-Digit-Recognition</a><br/>
+        created by Katz Sasaki
+    </div> -->
+    <div class="common">
+        <p>Thành viên đóng góp: Nguyễn Khải Hoàn, Nguyễn Viết Công, Lê Ngọc Ánh</p>
+    </div>
+    <br/>
+    <div class="common">
+        <div class="boxitem">
+            <canvas id="inputimg" width="300" height="300"></canvas>
+            <button id="clearbtn" style="margin: 20;font-size: large; width: auto;">Xóa</button>
+        </div>
+        <div class="boxitem">
+            <div id="pred">0</div>
+            <div id="prob">Độ chính xác (accuracy) : </div>
+        </div>
+        <div class="boxitem">
+            <svg id="probGraph" width="250" height="196"></svg>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+    <script src="//d3js.org/d3.v5.min.js"></script>
+
+</body>
