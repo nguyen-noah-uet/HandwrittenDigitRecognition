@@ -150,7 +150,7 @@ function showResult(res){
     divOut.textContent = res.pred;
 
     document.getElementById("prob").innerHTML = 
-        "Độ chính xác (accuracy) : " + res.probs[res.pred].toFixed(4) + "%";    
+        "Accuracy: " + res.probs[res.pred].toFixed(3) + "%";    
 
     svgGraph.selectAll("rect")
         .data(res.probs)

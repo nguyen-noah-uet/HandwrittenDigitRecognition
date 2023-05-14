@@ -8,35 +8,29 @@
 </head>
 
 <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-    <p class="title common">Computer Vision</p>
-    <!-- <div class="common">
-        <a href="https://github.com/nai-kon/CNN-Digit-Recognition">https://github.com/nai-kon/CNN-Digit-Recognition</a><br/>
-        created by Katz Sasaki
-    </div> -->
+    <h1 style="text-align:center;">Computer Vision Project</h1>
     <div class="common">
     <p class="title common">Nhận diện chữ số viết tay sử dụng CNN</p>
     <p class="title common">Handwritten Digit Recognition using CNN</p>
-    <!-- <div class="common">
-        <a href="https://github.com/nai-kon/CNN-Digit-Recognition">https://github.com/nai-kon/CNN-Digit-Recognition</a><br/>
-        created by Katz Sasaki
-    </div> -->
     <div class="common">
         <p>Thành viên đóng góp: Nguyễn Khải Hoàn, Nguyễn Viết Công, Lê Ngọc Ánh</p>
     </div>
     <br/>
     <div class="common">
-        <div class="boxitem">
-            <canvas id="inputimg" width="300" height="300"></canvas>
-            <button id="clearbtn" style="margin: 20;font-size: large; width: auto;">Xóa</button>
+        <div class="boxitem" style="margin-right: 100px;">
+            <canvas id="inputimg" width="250" height="250"></canvas>
+            <button id="clearbtn" style="margin: 20;font-size: large; width: auto;"> Xóa </button>
         </div>
-        <div class="boxitem">
+        <div class="boxitem" style="margin-right: 20px;">
+            
             <div id="pred">0</div>
-            <div id="prob">Độ chính xác (accuracy) : </div>
+            <div id="prob">Accuracy: </div>
         </div>
         <div class="boxitem">
-            <svg id="probGraph" width="250" height="196"></svg>
+            <svg id="probGraph" width="200" height="100"></svg>
         </div>
     </div>
+    
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
