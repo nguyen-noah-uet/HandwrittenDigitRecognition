@@ -13,7 +13,8 @@
 
 #inputimg {
     vertical-align: top;
-    border: solid 2px rgb(198, 26, 204);
+    border: solid 2px orange;
+    background-color: wheat;
 }
 
 #clearbtn {
@@ -23,11 +24,11 @@
 }
 
 #pred {
-    width: 196px;
-    height: 196px;
-    line-height: 196px;
-    font-size: 160px;
-    border: solid 2px rgb(198, 26, 204);
-    background-color: white;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 75px;
+    border: solid 2px orange;
+    background-color: wheat;
     font-family: 'Times New Roman', Times, serif;
 }
